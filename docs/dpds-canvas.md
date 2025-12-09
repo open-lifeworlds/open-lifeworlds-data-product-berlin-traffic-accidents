@@ -18,6 +18,12 @@
 
 ## Interface Components
 
+### Input Ports
+#### berlin-lor-geodata
+* fully qualified name: berlin-lor-geodata
+#### berlin-traffic-accidents-source-aligned
+* fully qualified name: berlin-traffic-accidents-source-aligned
+
 
 ---
 This Data Product Descriptor Specification canvas is based on [Data Product Descriptor Specification 1.0.0](https://dpds.opendatamesh.org/specifications/dpds/1.0.0/).

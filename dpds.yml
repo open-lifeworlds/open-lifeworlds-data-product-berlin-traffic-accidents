@@ -15,7 +15,33 @@ info:
   contactPoints:
 interfaceComponents:
   outputPorts: []
-  inputPorts: []
+  inputPorts:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-lor-geodata
+      fullyQualifiedName: berlin-lor-geodata
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-traffic-accidents-source-aligned
+      fullyQualifiedName: berlin-traffic-accidents-source-aligned
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
   discoveryPorts:
   observabilityPorts:
   controlPorts:

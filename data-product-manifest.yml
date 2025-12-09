@@ -9,7 +9,14 @@ metadata:
   updated: 2025-11-11
   schema:
 input_ports:
+  - id: berlin-lor-geodata
+    manifest_url: https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-geodata/refs/heads/main/data-product-manifest.yml
+  - id: berlin-traffic-accidents-source-aligned
+    manifest_url: https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-traffic-accidents-source-aligned/refs/heads/main/data-product-manifest.yml
 transformation_steps:
+  - name: Data extractor
+    path: https://github.com/open-lifeworlds/open-lifeworlds-python-lib/blob/main/openlifeworlds/extract/data_extractor.py
+    description: extracts data from inout ports
 output_ports: []
 observability:
   quality:
