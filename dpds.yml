@@ -1,0 +1,25 @@
+---
+dataProductDescriptor: data-product-descriptor
+info:
+  fullyQualifiedName: urn:dpds:openlifeworlds:dataproducts:berlin-traffic-accidents:1.0
+  name: Berlin Traffic Accidents
+  version: '1.0'
+  domain: domain
+  owner:
+    id: Open Lifeworlds
+    name: Open Lifeworlds
+  id: berlin-traffic-accidents
+  entityType:
+  displayName: Berlin Traffic Accidents
+  description:
+  contactPoints:
+interfaceComponents:
+  outputPorts: []
+  inputPorts: []
+  discoveryPorts:
+  observabilityPorts:
+  controlPorts:
+internalComponents:
+components:
+tags:
+externalDocs:

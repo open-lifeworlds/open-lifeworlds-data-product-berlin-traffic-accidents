@@ -1,0 +1,26 @@
+---
+id: berlin-traffic-accidents
+metadata:
+  name: Berlin Traffic Accidents
+  owner: Open Lifeworlds
+  description:
+  url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents
+  license: CC-BY 4.0
+  updated: 2025-11-11
+  schema:
+input_ports:
+transformation_steps:
+output_ports: []
+observability:
+  quality:
+    - name: geojson_property_completeness
+      description: The percentage of geojson features that have all necessary properties
+      files: []
+  operational:
+  slas:
+  security:
+consumers:
+use_cases:
+classification: consumer-aligned
+ubiquitous_language: []
+tags:
