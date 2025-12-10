@@ -8,6 +8,13 @@ attribute_groups:
     - name: is_motorcycle
     - name: is_truck
     - name: is_other
+    - { name: total_per_sqkm, numerator: total, denominator_area_sqkm: True }
+    - { name: is_bike_per_sqkm, numerator: is_bike, denominator_area_sqkm: True }
+    - { name: is_car_per_sqkm, numerator: is_car, denominator_area_sqkm: True }
+    - { name: is_by_foot_per_sqkm, numerator: is_by_foot, denominator_area_sqkm: True }
+    - { name: is_motorcycle_per_sqkm, numerator: is_motorcycle, denominator_area_sqkm: True }
+    - { name: is_truck_per_sqkm, numerator: is_truck, denominator_area_sqkm: True }
+    - { name: is_other_per_sqkm, numerator: is_other, denominator_area_sqkm: True }
 input_port_groups:
   - id: berlin-traffic-accidents
     input_ports:
