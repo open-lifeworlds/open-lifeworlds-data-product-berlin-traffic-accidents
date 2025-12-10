@@ -14,7 +14,33 @@ info:
   description:
   contactPoints:
 interfaceComponents:
-  outputPorts: []
+  outputPorts:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-traffic-accidents-geojson
+      fullyQualifiedName: berlin-traffic-accidents-geojson
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-traffic-accidents-statistics
+      fullyQualifiedName: berlin-traffic-accidents-statistics
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
   inputPorts:
     - promises:
       expectations:

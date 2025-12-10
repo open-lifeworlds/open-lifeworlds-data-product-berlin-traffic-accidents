@@ -17,12 +17,96 @@ transformation_steps:
   - name: Data extractor
     path: https://github.com/open-lifeworlds/open-lifeworlds-python-lib/blob/main/openlifeworlds/extract/data_extractor.py
     description: extracts data from inout ports
-output_ports: []
+  - name: Data blender
+    path: https://github.com/open-lifeworlds/open-lifeworlds-python-lib/blob/main/openlifeworlds/transform/data_blender.py
+    description: blends csv data into geojson files
+output_ports:
+  - id: berlin-traffic-accidents-geojson
+    metadata:
+      name: Berlin Traffic Accidents Geojson
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/tree/main/data/03-gold/berlin-traffic-accidents-geojson
+      license: CC-BY 4.0
+      updated: 2025-11-11
+      schema:
+    files:
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/refs/heads/main/data/03-gold/berlin-traffic-accidents-geojson/berlin-traffic-accidents-2018-00-city.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/refs/heads/main/data/03-gold/berlin-traffic-accidents-geojson/berlin-traffic-accidents-2018-00-district-regions.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/refs/heads/main/data/03-gold/berlin-traffic-accidents-geojson/berlin-traffic-accidents-2018-00-districts.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/refs/heads/main/data/03-gold/berlin-traffic-accidents-geojson/berlin-traffic-accidents-2018-00-forecast-areas.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/refs/heads/main/data/03-gold/berlin-traffic-accidents-geojson/berlin-traffic-accidents-2018-00-planning-areas.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/refs/heads/main/data/03-gold/berlin-traffic-accidents-geojson/berlin-traffic-accidents-2019-00-city.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/refs/heads/main/data/03-gold/berlin-traffic-accidents-geojson/berlin-traffic-accidents-2019-00-district-regions.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/refs/heads/main/data/03-gold/berlin-traffic-accidents-geojson/berlin-traffic-accidents-2019-00-districts.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/refs/heads/main/data/03-gold/berlin-traffic-accidents-geojson/berlin-traffic-accidents-2019-00-forecast-areas.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/refs/heads/main/data/03-gold/berlin-traffic-accidents-geojson/berlin-traffic-accidents-2019-00-planning-areas.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/refs/heads/main/data/03-gold/berlin-traffic-accidents-geojson/berlin-traffic-accidents-2020-00-city.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/refs/heads/main/data/03-gold/berlin-traffic-accidents-geojson/berlin-traffic-accidents-2020-00-district-regions.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/refs/heads/main/data/03-gold/berlin-traffic-accidents-geojson/berlin-traffic-accidents-2020-00-districts.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/refs/heads/main/data/03-gold/berlin-traffic-accidents-geojson/berlin-traffic-accidents-2020-00-forecast-areas.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/refs/heads/main/data/03-gold/berlin-traffic-accidents-geojson/berlin-traffic-accidents-2020-00-planning-areas.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/refs/heads/main/data/03-gold/berlin-traffic-accidents-geojson/berlin-traffic-accidents-2021-00-city.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/refs/heads/main/data/03-gold/berlin-traffic-accidents-geojson/berlin-traffic-accidents-2021-00-district-regions.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/refs/heads/main/data/03-gold/berlin-traffic-accidents-geojson/berlin-traffic-accidents-2021-00-districts.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/refs/heads/main/data/03-gold/berlin-traffic-accidents-geojson/berlin-traffic-accidents-2021-00-forecast-areas.geojson
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/refs/heads/main/data/03-gold/berlin-traffic-accidents-geojson/berlin-traffic-accidents-2021-00-planning-areas.geojson
+  - id: berlin-traffic-accidents-statistics
+    metadata:
+      name: Berlin Traffic Accidents Statistics
+      owner: Open Lifeworlds
+      description:
+      url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/tree/main/data/03-gold/berlin-traffic-accidents-statistics
+      license: CC-BY 4.0
+      updated: 2025-11-11
+      schema:
+    files:
+      - https://media.githubusercontent.com/media/open-lifeworlds/open-lifeworlds-data-product-berlin-traffic-accidents/refs/heads/main/data/03-gold/berlin-traffic-accidents-statistics/berlin-traffic-accidents-statistics.json
 observability:
   quality:
     - name: geojson_property_completeness
       description: The percentage of geojson features that have all necessary properties
-      files: []
+      files:
+        - name: berlin-traffic-accidents-2018-00-city.geojson
+          value: 100
+        - name: berlin-traffic-accidents-2018-00-districts.geojson
+          value: 100
+        - name: berlin-traffic-accidents-2018-00-forecast-areas.geojson
+          value: 100
+        - name: berlin-traffic-accidents-2018-00-district-regions.geojson
+          value: 100
+        - name: berlin-traffic-accidents-2018-00-planning-areas.geojson
+          value: 100
+        - name: berlin-traffic-accidents-2019-00-city.geojson
+          value: 100
+        - name: berlin-traffic-accidents-2019-00-districts.geojson
+          value: 100
+        - name: berlin-traffic-accidents-2019-00-forecast-areas.geojson
+          value: 100
+        - name: berlin-traffic-accidents-2019-00-district-regions.geojson
+          value: 100
+        - name: berlin-traffic-accidents-2019-00-planning-areas.geojson
+          value: 100
+        - name: berlin-traffic-accidents-2020-00-city.geojson
+          value: 100
+        - name: berlin-traffic-accidents-2020-00-districts.geojson
+          value: 100
+        - name: berlin-traffic-accidents-2020-00-forecast-areas.geojson
+          value: 100
+        - name: berlin-traffic-accidents-2020-00-district-regions.geojson
+          value: 100
+        - name: berlin-traffic-accidents-2020-00-planning-areas.geojson
+          value: 100
+        - name: berlin-traffic-accidents-2021-00-city.geojson
+          value: 100
+        - name: berlin-traffic-accidents-2021-00-districts.geojson
+          value: 100
+        - name: berlin-traffic-accidents-2021-00-forecast-areas.geojson
+          value: 100
+        - name: berlin-traffic-accidents-2021-00-district-regions.geojson
+          value: 100
+        - name: berlin-traffic-accidents-2021-00-planning-areas.geojson
+          value: 100
   operational:
   slas:
   security:

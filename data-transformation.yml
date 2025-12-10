@@ -1,2 +1,100 @@
 ---
-input_ports:
+attribute_groups:
+  all: &all
+    - name: total
+    - name: is_bike
+    - name: is_car
+    - name: is_by_foot
+    - name: is_motorcycle
+    - name: is_truck,is_other
+input_port_groups:
+  - id: berlin-traffic-accidents
+    input_ports:
+      - id: berlin-traffic-accidents-2018-00-csv
+        files:
+        - geojson_template_file_name: berlin-lor-city/berlin-lor-city.geojson
+          target_file_name: berlin-traffic-accidents-2018-00-city.geojson
+          source_files:
+            - { source_file_name: berlin-traffic-accidents-2018-00-city.csv, attributes: *all }
+        - geojson_template_file_name: berlin-lor-districts/berlin-lor-districts.geojson
+          target_file_name: berlin-traffic-accidents-2018-00-districts.geojson
+          source_files:
+            - { source_file_name: berlin-traffic-accidents-2018-00-districts.csv, attributes: *all }
+        - geojson_template_file_name: berlin-lor-forecast-areas-until-2020/berlin-lor-forecast-areas-until-2020.geojson
+          target_file_name: berlin-traffic-accidents-2018-00-forecast-areas.geojson
+          source_files:
+            - { source_file_name: berlin-traffic-accidents-2018-00-forecast-areas.csv, attributes: *all }
+        - geojson_template_file_name: berlin-lor-district-regions-until-2020/berlin-lor-district-regions-until-2020.geojson
+          target_file_name: berlin-traffic-accidents-2018-00-district-regions.geojson
+          source_files:
+            - { source_file_name: berlin-traffic-accidents-2018-00-district-regions.csv, attributes: *all }
+        - geojson_template_file_name: berlin-lor-planning-areas-until-2020/berlin-lor-planning-areas-until-2020.geojson
+          target_file_name: berlin-traffic-accidents-2018-00-planning-areas.geojson
+          source_files:
+            - { source_file_name: berlin-traffic-accidents-2018-00-planning-areas.csv, attributes: *all }
+      - id: berlin-traffic-accidents-2019-00-csv
+        files:
+        - geojson_template_file_name: berlin-lor-city/berlin-lor-city.geojson
+          target_file_name: berlin-traffic-accidents-2019-00-city.geojson
+          source_files:
+            - { source_file_name: berlin-traffic-accidents-2019-00-city.csv, attributes: *all }
+        - geojson_template_file_name: berlin-lor-districts/berlin-lor-districts.geojson
+          target_file_name: berlin-traffic-accidents-2019-00-districts.geojson
+          source_files:
+            - { source_file_name: berlin-traffic-accidents-2019-00-districts.csv, attributes: *all }
+        - geojson_template_file_name: berlin-lor-forecast-areas-until-2020/berlin-lor-forecast-areas-until-2020.geojson
+          target_file_name: berlin-traffic-accidents-2019-00-forecast-areas.geojson
+          source_files:
+            - { source_file_name: berlin-traffic-accidents-2019-00-forecast-areas.csv, attributes: *all }
+        - geojson_template_file_name: berlin-lor-district-regions-until-2020/berlin-lor-district-regions-until-2020.geojson
+          target_file_name: berlin-traffic-accidents-2019-00-district-regions.geojson
+          source_files:
+            - { source_file_name: berlin-traffic-accidents-2019-00-district-regions.csv, attributes: *all }
+        - geojson_template_file_name: berlin-lor-planning-areas-until-2020/berlin-lor-planning-areas-until-2020.geojson
+          target_file_name: berlin-traffic-accidents-2019-00-planning-areas.geojson
+          source_files:
+            - { source_file_name: berlin-traffic-accidents-2019-00-planning-areas.csv, attributes: *all }
+      - id: berlin-traffic-accidents-2020-00-csv
+        files:
+        - geojson_template_file_name: berlin-lor-city/berlin-lor-city.geojson
+          target_file_name: berlin-traffic-accidents-2020-00-city.geojson
+          source_files:
+            - { source_file_name: berlin-traffic-accidents-2020-00-city.csv, attributes: *all }
+        - geojson_template_file_name: berlin-lor-districts/berlin-lor-districts.geojson
+          target_file_name: berlin-traffic-accidents-2020-00-districts.geojson
+          source_files:
+            - { source_file_name: berlin-traffic-accidents-2020-00-districts.csv, attributes: *all }
+        - geojson_template_file_name: berlin-lor-forecast-areas-until-2020/berlin-lor-forecast-areas-until-2020.geojson
+          target_file_name: berlin-traffic-accidents-2020-00-forecast-areas.geojson
+          source_files:
+            - { source_file_name: berlin-traffic-accidents-2020-00-forecast-areas.csv, attributes: *all }
+        - geojson_template_file_name: berlin-lor-district-regions-until-2020/berlin-lor-district-regions-until-2020.geojson
+          target_file_name: berlin-traffic-accidents-2020-00-district-regions.geojson
+          source_files:
+            - { source_file_name: berlin-traffic-accidents-2020-00-district-regions.csv, attributes: *all }
+        - geojson_template_file_name: berlin-lor-planning-areas-until-2020/berlin-lor-planning-areas-until-2020.geojson
+          target_file_name: berlin-traffic-accidents-2020-00-planning-areas.geojson
+          source_files:
+            - { source_file_name: berlin-traffic-accidents-2020-00-planning-areas.csv, attributes: *all }
+      - id: berlin-traffic-accidents-2021-00-csv
+        files:
+        - geojson_template_file_name: berlin-lor-city/berlin-lor-city.geojson
+          target_file_name: berlin-traffic-accidents-2021-00-city.geojson
+          source_files:
+            - { source_file_name: berlin-traffic-accidents-2021-00-city.csv, attributes: *all }
+        - geojson_template_file_name: berlin-lor-districts/berlin-lor-districts.geojson
+          target_file_name: berlin-traffic-accidents-2021-00-districts.geojson
+          source_files:
+            - { source_file_name: berlin-traffic-accidents-2021-00-districts.csv, attributes: *all }
+        - geojson_template_file_name: berlin-lor-forecast-areas-until-2020/berlin-lor-forecast-areas-until-2020.geojson
+          target_file_name: berlin-traffic-accidents-2021-00-forecast-areas.geojson
+          source_files:
+            - { source_file_name: berlin-traffic-accidents-2021-00-forecast-areas.csv, attributes: *all }
+        - geojson_template_file_name: berlin-lor-district-regions-until-2020/berlin-lor-district-regions-until-2020.geojson
+          target_file_name: berlin-traffic-accidents-2021-00-district-regions.geojson
+          source_files:
+            - { source_file_name: berlin-traffic-accidents-2021-00-district-regions.csv, attributes: *all }
+        - geojson_template_file_name: berlin-lor-planning-areas-until-2020/berlin-lor-planning-areas-until-2020.geojson
+          target_file_name: berlin-traffic-accidents-2021-00-planning-areas.geojson
+          source_files:
+            - { source_file_name: berlin-traffic-accidents-2021-00-planning-areas.csv, attributes: *all }

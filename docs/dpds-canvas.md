@@ -24,6 +24,12 @@
 #### berlin-traffic-accidents-source-aligned
 * fully qualified name: berlin-traffic-accidents-source-aligned
 
+### Output Ports
+#### berlin-traffic-accidents-geojson
+* fully qualified name: berlin-traffic-accidents-geojson
+#### berlin-traffic-accidents-statistics
+* fully qualified name: berlin-traffic-accidents-statistics
+
 
 ---
 This Data Product Descriptor Specification canvas is based on [Data Product Descriptor Specification 1.0.0](https://dpds.opendatamesh.org/specifications/dpds/1.0.0/).
